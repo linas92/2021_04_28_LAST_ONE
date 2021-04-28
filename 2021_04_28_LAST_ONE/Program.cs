@@ -2,7 +2,7 @@
 
 namespace _2021_04_28_LAST_ONE
 {
-    partial class Program
+    public class Program
     {
         static void Main(string[] args)
         {

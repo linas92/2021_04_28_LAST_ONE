@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2021_04_28_LAST_ONE
 {
-    public partial class Spalva
+    public class Spalva
     {
         public Spalva()
         {
@@ -27,5 +27,13 @@ namespace _2021_04_28_LAST_ONE
             G = g;
             B = b;
         }
+        public byte GetGreyscale()
+        {
+            return (byte)((R + G + B) / 3);
+        }
+    }
+    public class Kamuolys
+    {
+
     }
 }
