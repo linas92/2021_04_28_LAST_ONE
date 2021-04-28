@@ -1,24 +1,35 @@
-﻿namespace _2021_04_28_LAST_ONE
-{
-    partial class Program
-    {
-        public class Spalva
-        {
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace _2021_04_28_LAST_ONE
+{
+    public class Spalva
+    {
+        public Spalva()
+        {
+            R = G = B = 255;
+        }
+        public Spalva(byte r, byte g, byte b)
+        {
+            R = r;
+            G = g;
+            B = b;
+        }
+        public byte R { get; private set; }
+        public byte G { get; private set; }
+        public byte B { get; private set; }
+        public void SetColors(byte r, byte g, byte b)
+        {
+            R = r;
+            G = g;
+            B = b;
+        }
+        public void AverageColors()
+        {
+            
         }
     }
 }
-/*          1. Sukurti klasę Spalva. Spalva paprastai aprašoma RGB kodu skaičiais nuo 0 iki 255. Ty maišant raudoną, žalią ir mėlyną
-                - sukurti reikiamus property, kuris saugotu spalvos informaciją
-                - sukurti konstruktorių kuris priima raudoną, žalią ar mėlyną spalvas
-                - sukurti konstruktorių kuris jei nepaduodama spalvos - priskiria default (balta)
-                - sukurti metodus kiekvienos spalvos kodo keitimui
-                - sukurti metodą kuris gąžintu vidutinę RGB properčių reikšmę (grayscale value)
-            2. Sukurti klasę Kamuolys, 
-                - kurioje turi būti kompozicija į klasę Spalva
-                - kamuolys turi dydį
-                - kamuolys turi sekti kiek kartų buvo metamas
-                - sukurti konstruktorių(ar konstruktorius) su parametrais kurių gali reikėti valeidžiai klasei sukonstruoti
-                - sukurti metodą Mesti, kuris prideda 1 prie metimų kiekio
-                - sukurti metodą Susprogdinti, kuris dydį sumažina iki 0
-*/
