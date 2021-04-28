@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2021_04_28_LAST_ONE
 {
-    public class Spalva
+    public partial class Spalva
     {
         public Spalva()
         {
@@ -26,10 +26,6 @@ namespace _2021_04_28_LAST_ONE
             R = r;
             G = g;
             B = b;
-        }
-        public void AverageColors()
-        {
-            
         }
     }
 }
